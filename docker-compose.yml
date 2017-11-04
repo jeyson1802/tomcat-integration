@@ -1,0 +1,15 @@
+version: '2'
+
+networks:
+  prodnetwork:
+    driver: bridge
+
+services:
+ tomcat:
+  build: ./tomcat
+  ports:
+   - "8000:8080"
+  networks:
+    - prodnetwork
+  volumes:
+    - /opt/tomcat: /usr/local/tomcat/
