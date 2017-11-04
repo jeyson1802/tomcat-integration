@@ -1,4 +1,4 @@
-FROM tomcat:8.5.11
+FROM tomcat:7.0.82
 MAINTAINER Borgy Manotoy <borgymanotoy@ujeaze.com>
 
 # Update Apt and then install Nano editor (RUN can be removed)
